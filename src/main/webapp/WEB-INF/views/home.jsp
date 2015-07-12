@@ -30,11 +30,13 @@ The Jstl name from properties file<fmt:message key="jstl.name" ></fmt:message>
 
 <div><h1>The value from controller class--</h1><c:out value="${nm}"></c:out></div>
 
+<div>The Add is :<c:out value="${varAdd}"></c:out> </div>
+
 <h1>The use of jstl ForEach</h1>
 
 <c:if test="${not empty list}" >
 <c:forEach var="lstvar" items="${list}">
-
+<div>The Add is :<c:out value="${varAdd}"></c:out> </div>
 <c:out value="${lstvar}"></c:out>
 </c:forEach>
 </c:if>
