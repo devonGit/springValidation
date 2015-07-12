@@ -40,7 +40,7 @@ The Jstl name from properties file<fmt:message key="jstl.name" ></fmt:message>
 <c:out value="${lstvar}"></c:out>
 </c:forEach>
 </c:if>
-
+ 
 
 
 

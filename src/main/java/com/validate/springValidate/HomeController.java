@@ -42,7 +42,7 @@ public class HomeController {
 		String add="2B/262, Vasundhara Ghaziabad";
 		String myname="Devendra Kumar sharma and Ram kumar";
 		model.addAttribute("nm", myname);
-		model.addAttribute("varAdd", add);	
+		model.addAttribute("varAdd", add);	 
 		
 		List<String> lst=new ArrayList<String>();
 		lst.add("Devendra ");
