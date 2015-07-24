@@ -52,6 +52,17 @@ public class HomeController {
 		
 		model.addAttribute("list", lst);
 		
+		String strnm=new String();
+		StringBuffer strbuf=new StringBuffer();
+		strbuf.append("Dev");
+		strbuf.append("/");
+		strbuf.append("Ram");
+		strbuf.append("/");
+		strbuf.append("shyam");
+		strnm=strbuf.toString();
+		
+		model.addAttribute("arstr", strnm);
+		
 		model.addAttribute("serverTime", formattedDate );
 		
 		return "home";
@@ -74,5 +85,10 @@ public class HomeController {
 		return new ModelAndView("/success");
 	}
 	
-	
+	@RequestMapping("/jstlQuery")
+	public String jstl(){
+		
+		return "JstlSql";
+	}
+	 
 }
